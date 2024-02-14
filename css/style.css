@@ -4,6 +4,92 @@
     box-sizing: border-box;
 }
 
-div{
-    color: red;
+:root {
+	--color-footer: #222222;
+	--color-header: #000000;
+	--color-background: #4a4a4a;
 }
+
+body {
+        font-family: "Roboto", sans-serif;
+}
+
+/* Utility flex */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-content {
+    align-items: center;
+    align-content: center;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.d-flexend {
+    justify-content: flex-end;
+}
+
+/* Div Container settings */
+
+#app {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-header);
+    color: white;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 50px;
+}
+
+header > span {
+    margin-top: 10px;
+    background-color: var(--color-background);
+    max-height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Main */
+
+main {
+    margin-top: 50px;
+    height: calc(100% - 170px);
+}
+
+.card {
+    width: calc(100% / 7 - 20px);
+    border: 1px solid red;
+    aspect-ratio: 16 / 9;
+    margin: 10px;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    height: 70px;
+    background-color: red;
+}
+
+
+
